@@ -647,13 +647,13 @@ body {
   top: 0;
   left: 0;
   padding: 40px 35px 40px 40px;
-  transform: translate(0);
-  transition: transform var(--transition);
+  opacity: 1;
+  transition: left var(--transition);
 }
 
 .mobile-menu.is-hidden {
-  transform: translateX(100%);
-  transition: transform var(--transition);
+  pointer-events: auto;
+  left: 100%;
 }
 .menu-close-btn {
   position: absolute;
@@ -663,6 +663,15 @@ body {
   border: 1px solid rgba(43, 37, 37, 0.105);
   background-color: transparent;
   text-align: center;
+  transition: background-color var(--transition);
+}
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  background-color: var(--slate);
+}
+.menu-close-btn:hover .menu-close-icon,
+.menu-close-btn:focus .menu-close-icon {
+  fill: #fff;
 }
 .menu-open-btn {
   border: none;
@@ -679,6 +688,7 @@ body {
 .menu-close-icon,
 .menu-open-icon {
   fill: var(--navy);
+  transition: fill var(--transition);
 }
 
 .menu-nav {
