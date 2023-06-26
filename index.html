@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +22,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="header-title link"
@@ -55,17 +56,91 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg width="32" height="22" class="menu-open-icon">
+            <use href="/images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile-menu is-hidden" data-menu>
+         <button type="button" class="menu-close-btn" data-menu-close>
+           <svg width="8" height="8" class="menu-close-icon">
+            <use href="/images/icons.svg#icon-menu-close"></use>
+          </svg>
+         </button>
+        <nav class="menu-nav">
+          <ul class="menu-list list">
+            <li class="menu-list-item">
+              <a href="./index.html" class="menu-links link"
+                >Studio</a
+              >
+            </li>
+            <li class="menu-list-item">
+              <a href="./portfolio.html" class="menu-links link">Portfolio</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="" class="menu-links link">Contacts</a>
+            </li>
+          </ul>
+        <address class="menu-address">
+          <ul class="list menu-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="menu-contacts link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="menu-contacts link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="menu-soc">
+                  <li class="menu-soc-item">
+                    <a href="/" class="menu-soc-link"
+                      ><svg class="menu-soc-icon" width="24" height="24">
+                        <use
+                          href="./images/icons.svg#icon-instagram-2"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="menu-soc-item">
+                    <a href="/" class="menu-soc-link"
+                      ><svg class="menu-soc-icon" width="24" height="24">
+                        <use
+                          href="./images/icons.svg#icon-twitter-1"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="menu-soc-item">
+                    <a href="/" class="menu-soc-link"
+                      ><svg class="menu-soc-icon" width="24" height="24">
+                        <use
+                          href="./images/icons.svg#icon-facebook-1"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="menu-soc-item">
+                    <a href="/" class="menu-soc-link"
+                      ><svg class="menu-soc-icon" width="24" height="24">
+                        <use
+                          href="./images/icons.svg#icon-linkedin-1"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+      </div>
+    </header>
     <main>
-      <!-- <section class="main-section">
+      <section class="main-section">
         <div class="main-container container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button-order-service" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
@@ -152,13 +227,17 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="team-container">
+      <section class="team-container">
         <div class="container">
           <h2 id="portfolio" class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
-                src="./images/ihor.jpg"
+                srcset="
+                  ./images/team-photo1-1x.jpg 1x,
+                  ./images/team-photo1-2x.jpg 2x
+                "
+                src="./images/team-photo1-1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -204,7 +283,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/mykola.jpg"
+                srcset="
+                  ./images/team-photo2-1x.jpg 1x,
+                  ./images/team-photo2-2x.jpg 2x
+                "
+                src="./images/team-photo2-1x.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -251,7 +334,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/olga.jpg"
+                srcset="
+                  ./images/team-photo3-1x.jpg 1x,
+                  ./images/team-photo3-2x.jpg 2x
+                "
+                src="./images/team-photo3-1x.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -298,7 +385,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/mykhailo.jpg"
+                srcset="
+                  ./images/team-photo4-1x.jpg 1x,
+                  ./images/team-photo4-2x.jpg 2x
+                "
+                src="./images/team-photo4-1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -344,7 +435,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="customers-container">
         <div class="container">
           <h2 class="section-title">Customers</h2>
