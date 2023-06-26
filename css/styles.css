@@ -652,7 +652,6 @@ body {
 }
 
 .mobile-menu.is-hidden {
-  pointer-events: auto;
   left: 100%;
 }
 .menu-close-btn {
@@ -660,7 +659,7 @@ body {
   top: 24px;
   right: 24px;
   border-radius: 24px;
-  border: 1px solid rgba(43, 37, 37, 0.105);
+  border: 1px solid rgba(43, 37, 37, 0.07);
   background-color: transparent;
   text-align: center;
   transition: background-color var(--transition);
@@ -803,7 +802,6 @@ body {
   padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden .modal {
-  transition: transform var(--transition), opacity var(--transition);
   transform: translate(-50%, -50%) scaleY(0);
   opacity: 0;
 }
