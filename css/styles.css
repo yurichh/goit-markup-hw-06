@@ -70,9 +70,9 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 1158px;
+  max-width: 428px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   padding: 0 16px;
 }
 
