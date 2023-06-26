@@ -13,6 +13,33 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .features-container {
+    flex-direction: row;
+    width: 100%;
+    gap: 72px 24px;
+  }
+  .features-items {
+    width: calc((100% - 24px) / 2);
+  }
 }
 @media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0;
+  }
+  .features-icon-block {
+    display: flex;
+  }
+  .features-items {
+    width: calc((100% - 72px) / 4);
+  }
+  .features-title {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
 }

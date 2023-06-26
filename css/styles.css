@@ -240,6 +240,7 @@ body {
 .features-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 72px;
 }
 .features-items {
@@ -649,6 +650,7 @@ body {
   padding: 40px 35px 40px 40px;
   opacity: 1;
   transition: left var(--transition);
+  z-index: 2;
 }
 
 .mobile-menu.is-hidden {
