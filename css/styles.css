@@ -306,12 +306,14 @@ body {
 .team-list {
   display: flex;
   gap: 72px;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 .team-item {
   width: 100%;
   height: auto;
-  /* width: calc((100% -72px) / 4); */
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -383,14 +385,16 @@ body {
 
 /** ------------------CUSTOMERS ------------------ */
 .customers-container {
-  padding: 120px 0;
+  padding: 96px 0;
+  width: 100%;
 }
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
 }
 .customers-list-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 32px) / 2);
   height: 88px;
 }
 .customers-link {
