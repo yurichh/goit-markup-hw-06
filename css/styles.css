@@ -249,6 +249,7 @@ body {
   /* width: calc((100% - 72px) / 4); */
 }
 .features-icon-block {
+  width: 100%;
   display: none;
   justify-content: center;
   align-items: center;
