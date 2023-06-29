@@ -432,7 +432,7 @@ body {
   display: flex;
   gap: 16px 24px;
   justify-content: center;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
   flex-wrap: wrap;
 }
 .portfolio-button {
