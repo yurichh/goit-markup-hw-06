@@ -106,6 +106,31 @@
   .customers-list-item {
     width: calc((100% - 48px) / 3);
   }
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: start;
+    padding-left: 108px;
+  }
+  .footer-copyright {
+    display: block;
+  }
+  .footer-soc-title {
+    text-align: left;
+  }
+  .footer-form {
+    display: block;
+  }
+  .footer-form-title {
+    text-align: left;
+  }
+  .footer-input-container {
+    flex-direction: row;
+  }
+  .footer-input {
+    width: 264px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .container {
@@ -183,5 +208,22 @@
   }
   .customers-list-item {
     width: calc((100% - 120px) / 6);
+  }
+  .footer-container {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 0;
+    align-items: baseline;
+  }
+  .footer-copyright {
+    margin-right: 120px;
+  }
+  .footer-soc {
+    margin-right: 80px;
+  }
+  .footer-subscribe-menu {
+  }
+  .footer-input-container {
+    gap: 24px;
   }
 }
