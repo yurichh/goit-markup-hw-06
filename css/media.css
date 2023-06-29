@@ -13,9 +13,6 @@
 }
 
 @media screen and (min-width: 428px) {
-  .page-title {
-    max-width: 320px;
-  }
   .features-items {
     width: 396px;
   }
@@ -28,6 +25,33 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+  .header-title {
+    margin-right: 120px;
+  }
+  .header-list {
+    display: flex;
+  }
+  .header-info {
+  }
+  .header-nav {
+    justify-content: space-between;
+  }
+  .header-address .header-list {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .header-container {
+    display: block;
+  }
+  .header-contacts {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.04em;
+  }
   .main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -45,6 +69,12 @@
         ),
         url(../images/hero-bg-tab-2x.jpg);
     }
+  }
+  .page-title {
+    font-size: 56px;
+    letter-spacing: 0.02em;
+    line-height: 60px;
+    margin-bottom: 36px;
   }
   .container {
     max-width: 768px;
@@ -67,6 +97,9 @@
   .features-items {
     width: calc((100% - 24px) / 2);
   }
+  .features-title {
+    text-align: start;
+  }
   .customers-list {
     gap: 72px 24px;
   }
@@ -79,7 +112,18 @@
     max-width: 1158px;
     padding: 0 16px;
   }
-
+  .header-title {
+    margin-right: 76px;
+  }
+  .header-address .header-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
   .main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -98,17 +142,13 @@
         url(../images/hero-bg-2x.jpg);
     }
   }
-  .team-container {
-    padding: 120px 0;
+  .page-title {
+    margin-bottom: 48px;
   }
-  .team-list {
-    gap: 24px;
-    flex-wrap: nowrap;
+  .doing-container {
+    display: block;
   }
-  .team-item {
-    width: calc((100% -72px) / 4);
-  }
-  .features-container {
+  .features {
     padding: 120px 0;
   }
   .features-icon-block {
@@ -123,6 +163,16 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+  }
+  .team-container {
+    padding: 120px 0;
+  }
+  .team-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .team-item {
+    width: calc((100% -72px) / 4);
   }
   .customers-container {
     padding: 120px 0;

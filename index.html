@@ -24,41 +24,43 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
-          <a href="./index.html" class="header-title link"
-            >Web <span class="header-span">Studio</span>
-          </a>
-          <ul class="header-list list">
-            <li class="header-list-item">
-              <a href="./index.html" class="header-links current link"
-                >Studio</a
-              >
-            </li>
-            <li class="header-list-item">
-              <a href="./portfolio.html" class="header-links link">Portfolio</a>
-            </li>
-            <li class="header-list-item">
-              <a href="" class="header-links link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="header-address">
-          <ul class="list header-list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="header-contacts link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="header-contacts link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="header-info">
+          <nav class="header-nav">
+            <a href="./index.html" class="header-title link"
+              >Web<span class="header-span">Studio</span>
+            </a>
+            <ul class="header-list list">
+              <li class="header-list-item">
+                <a href="./index.html" class="header-links current link"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-list-item">
+                <a href="./portfolio.html" class="header-links link">Portfolio</a>
+              </li>
+              <li class="header-list-item">
+                <a href="" class="header-links link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header-address">
+            <ul class="header-list list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="header-contacts link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="header-contacts link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
         <button type="button" class="menu-open-btn" data-menu-open>
           <svg width="32" height="22" class="menu-open-icon">
-            <use href="/images/icons.svg#icon-menu-open"></use>
+            <use href="/images/menu-open.svg#clip0_297068_2681"></use>
           </svg>
           <span></span>
         </button>
@@ -204,7 +206,11 @@
           <ul class="list doing-list">
             <li class="doing-items">
               <img
-                src="./images/box1.jpg"
+              srcset="
+                  ./images/doing1.jpg 1x,
+                  ./images/doing1-2x.jpg 2x
+                "
+                src="./images/doing1.jpg"
                 alt="Alternative text"
                 width="360"
                 height="294"
@@ -212,7 +218,11 @@
             </li>
             <li class="doing-items">
               <img
-                src="./images/box2.jpg"
+               srcset="
+                  ./images/doing2.jpg 1x,
+                  ./images/doing2-2x.jpg 2x
+                "
+                src="./images/doing2.jpg"
                 alt="Alternative text"
                 width="360"
                 height="294"
@@ -220,7 +230,11 @@
             </li>
             <li class="doing-items">
               <img
-                src="./images/box3.jpg"
+               srcset="
+                  ./images/doing3.jpg 1x,
+                  ./images/doing3-2x.jpg 2x
+                "
+                src="./images/doing3.jpg"
                 alt="Alternative text"
                 width="360"
                 height="294"
