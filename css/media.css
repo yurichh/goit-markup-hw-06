@@ -13,6 +13,9 @@
 }
 
 @media screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+  }
   .features-items {
     width: 396px;
   }
@@ -25,6 +28,13 @@
   }
 }
 @media screen and (min-width: 768px) {
+  /* .filter-image img {
+    width: 100%;
+    height: auto;
+  } */
+  .modal {
+    width: 408px;
+  }
   .menu-open-btn {
     display: none;
   }
