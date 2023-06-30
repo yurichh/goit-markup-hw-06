@@ -410,7 +410,7 @@ body {
   border-radius: 4px;
   border: 1px solid var(--light-slate);
   cursor: pointer;
-  transition: border-color var(--transition), color var(--transition);
+  transition: border-color var(--transition);
   color: var(--light-slate);
 }
 
@@ -418,13 +418,15 @@ body {
 .customers-link:focus {
   border-color: var(--ocean);
 }
+
+.customers-icon {
+  fill: currentColor;
+  transition: fill var(--transition);
+}
+
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
   fill: var(--ocean);
-}
-.customers-icon {
-  fill: currentColor;
-  transition: color var(--transition);
 }
 
 /** ------------------PORTFOLIO.HTML------------------ */
@@ -657,7 +659,7 @@ body {
 .footer-btn {
   width: 165px;
   height: 40px;
-  background-color: #4d5ae5;
+  background-color: var(--iris);
   border-radius: 4px;
   border: none;
   font-family: "Roboto", sans-serif;
@@ -670,6 +672,11 @@ body {
   letter-spacing: 0.04em;
   color: var(--white);
   cursor: pointer;
+  transition: background-color var(--transition);
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--ocean);
 }
 .footer-btn-icon {
   margin-left: 16px;
@@ -839,7 +846,7 @@ body {
   background-color: var(--dairy);
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scaleY(100%);
+  transform: translate(-50%, -50%);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -993,4 +1000,8 @@ body {
   cursor: pointer;
   margin: 0 auto;
   transition: background-color var(--transition);
+}
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+  background-color: var(--ocean);
 }
