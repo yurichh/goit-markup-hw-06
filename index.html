@@ -36,7 +36,9 @@
                 >
               </li>
               <li class="header-list-item">
-                <a href="./portfolio.html" class="header-links link">Portfolio</a>
+                <a href="./portfolio.html" class="header-links link"
+                  >Portfolio</a
+                >
               </li>
               <li class="header-list-item">
                 <a href="#contacts" class="header-links link">Contacts</a>
@@ -66,25 +68,24 @@
         </button>
       </div>
       <div class="mobile-menu is-hidden" data-menu>
-         <button type="button" class="menu-close-btn" data-menu-close>
-           <svg width="8" height="8" class="menu-close-icon">
+        <button type="button" class="menu-close-btn" data-menu-close>
+          <svg width="8" height="8" class="menu-close-icon">
             <use href="./images/icons.svg#icon-menu-close"></use>
           </svg>
-         </button>
+        </button>
         <nav class="menu-nav">
           <ul class="menu-nav-list list">
             <li>
-              <a href="./index.html" class="menu-links link"
-                >Studio</a
-              >
+              <a href="./index.html" class="menu-links link">Studio</a>
             </li>
             <li>
               <a href="./portfolio.html" class="menu-links link">Portfolio</a>
             </li>
             <li>
-              <a href="" class="menu-links link">Contacts</a>
+              <a href="#contacts" class="menu-links link">Contacts</a>
             </li>
           </ul>
+        </nav>
         <address class="menu-address">
           <ul class="list menu-address-list">
             <li>
@@ -97,43 +98,34 @@
                 >info@devstudio.com</a
               >
             </li>
-            
           </ul>
         </address>
         <ul class="menu-soc">
-                  <li class="menu-soc-item">
-                    <a href="/" class="menu-soc-link"
-                      ><svg class="menu-soc-icon" width="24" height="24">
-                        <use
-                          href="./images/icons.svg#icon-instagram-2"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="menu-soc-item">
-                    <a href="/" class="menu-soc-link"
-                      ><svg class="menu-soc-icon" width="24" height="24">
-                        <use
-                          href="./images/icons.svg#icon-twitter-1"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="menu-soc-item">
-                    <a href="/" class="menu-soc-link"
-                      ><svg class="menu-soc-icon" width="24" height="24">
-                        <use
-                          href="./images/icons.svg#icon-facebook-1"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="menu-soc-item">
-                    <a href="/" class="menu-soc-link"
-                      ><svg class="menu-soc-icon" width="24" height="24">
-                        <use
-                          href="./images/icons.svg#icon-linkedin-1"
-                        ></use></svg
-                    ></a>
-                  </li>
-                </ul>
+          <li class="menu-soc-item">
+            <a href="/" class="menu-soc-link"
+              ><svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use></svg
+            ></a>
+          </li>
+          <li class="menu-soc-item">
+            <a href="/" class="menu-soc-link"
+              ><svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use></svg
+            ></a>
+          </li>
+          <li class="menu-soc-item">
+            <a href="/" class="menu-soc-link"
+              ><svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use></svg
+            ></a>
+          </li>
+          <li class="menu-soc-item">
+            <a href="/" class="menu-soc-link"
+              ><svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use></svg
+            ></a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -206,10 +198,7 @@
           <ul class="list doing-list">
             <li class="doing-items">
               <img
-              srcset="
-                  ./images/doing1.jpg 1x,
-                  ./images/doing1-2x.jpg 2x
-                "
+                srcset="./images/doing1.jpg 1x, ./images/doing1-2x.jpg 2x"
                 src="./images/doing1.jpg"
                 alt="Alternative text"
                 width="360"
@@ -218,10 +207,7 @@
             </li>
             <li class="doing-items">
               <img
-               srcset="
-                  ./images/doing2.jpg 1x,
-                  ./images/doing2-2x.jpg 2x
-                "
+                srcset="./images/doing2.jpg 1x, ./images/doing2-2x.jpg 2x"
                 src="./images/doing2.jpg"
                 alt="Alternative text"
                 width="360"
@@ -230,10 +216,7 @@
             </li>
             <li class="doing-items">
               <img
-               srcset="
-                  ./images/doing3.jpg 1x,
-                  ./images/doing3-2x.jpg 2x
-                "
+                srcset="./images/doing3.jpg 1x, ./images/doing3-2x.jpg 2x"
                 src="./images/doing3.jpg"
                 alt="Alternative text"
                 width="360"
@@ -548,11 +531,11 @@
             <label class="footer-label" for="footer-email"></label>
             <div class="footer-input-container">
               <input
-                  type="email"
-                  name="footer-email"
-                  id="footer-email"
-                  placeholder="E-mail"
-                  class="footer-input"
+                type="email"
+                name="footer-email"
+                id="footer-email"
+                placeholder="E-mail"
+                class="footer-input"
               />
               <button type="submit" class="footer-btn">
                 Subscribe
@@ -645,7 +628,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

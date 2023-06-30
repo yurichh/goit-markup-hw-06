@@ -337,7 +337,7 @@ body {
 }
 .team-container {
   background-color: var(--cloud);
-  padding: 96px 25px;
+  padding: 96px 12px;
   width: 100%;
 }
 
@@ -465,6 +465,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  justify-content: center;
 }
 .filter-items {
   width: 100%;
@@ -482,11 +483,12 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .filter-image {
-  margin: 0;
-  width: 100%;
-  height: auto;
   position: relative;
   overflow: hidden;
+}
+.filter-image img {
+  width: 100%;
+  height: auto;
 }
 .filter-overlay-text {
   top: 0;
