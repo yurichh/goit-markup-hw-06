@@ -572,9 +572,6 @@ body {
   text-align: center;
 }
 
-.footer-soc {
-  /* margin-right: 80px; */
-}
 .footer-soc-title {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -773,8 +770,6 @@ body {
   color: var(--ocean);
 }
 
-.menu-address {
-}
 .menu-tel {
   color: var(--slate);
   font-size: 36px;
