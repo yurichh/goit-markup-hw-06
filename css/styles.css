@@ -690,14 +690,13 @@ body {
   top: 0;
   left: 0;
   padding: 40px 35px 40px 40px;
-  opacity: 1;
-  transition: opacity var(--transition), left var(--transition);
+  transition: opacity var(--transition), left var(--transition),
+    visibility var(--transition);
   z-index: 2;
 }
 .mobile-menu.is-hidden {
   left: 100%;
   opacity: 0;
-  transition: opacity var(--transition), left var(--transition);
 }
 
 .mobile-menu.is-hidden .mobile-menu {
