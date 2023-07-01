@@ -105,6 +105,9 @@
   .features-title {
     text-align: start;
   }
+  .customers-container {
+    padding: 96px 92px;
+  }
   .customers-list {
     gap: 72px 24px;
   }
@@ -116,7 +119,7 @@
     flex-wrap: wrap;
     gap: 72px 24px;
     justify-content: start;
-    padding-left: 108px;
+    max-width: 550px;
   }
   .footer-copyright {
     display: block;
@@ -181,6 +184,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg-1x.jpg);
+    padding: 188px 0;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -214,6 +218,9 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+  }
+  .features-text {
+    font-weight: 400;
   }
   .team-container {
     padding: 120px 0;

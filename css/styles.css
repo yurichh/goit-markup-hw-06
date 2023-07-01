@@ -693,6 +693,8 @@ body {
   transition: opacity var(--transition), left var(--transition),
     visibility var(--transition);
   z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu.is-hidden {
   left: 100%;
@@ -741,11 +743,11 @@ body {
 .menu-nav {
   display: flex;
   flex-direction: column;
+  margin-bottom: auto;
 }
 .menu-nav-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 284px;
   margin-top: 40px;
   gap: 40px;
 }
@@ -763,7 +765,9 @@ body {
   letter-spacing: 0.02em;
   transition: color var(--transition);
 }
-
+.current {
+  color: var(--ocean);
+}
 .menu-links:hover,
 .menu-links:focus {
   color: var(--ocean);
