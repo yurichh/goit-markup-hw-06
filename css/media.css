@@ -27,6 +27,11 @@
     width: 264px;
   }
 }
+@media screen and (max-width: 767px) {
+  .current::after {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
