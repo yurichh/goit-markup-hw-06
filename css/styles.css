@@ -56,7 +56,7 @@ img {
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--cloud);
   font-family: Roboto, sans-serif;
   color: var(--slate);
   line-height: 1.5;
@@ -147,7 +147,7 @@ body {
   height: 4px;
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 0;
 }
 
 .header-contacts {
@@ -849,12 +849,14 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform var(--transition), opacity var(--transition);
+  /* transition: transform var(--transition), opacity var(--transition); */
+  animation: leBlurIn 1s;
   padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleY(0);
-  opacity: 0;
+  /* transform: translate(-50%, -50%) scaleY(0);
+  opacity: 0; */
+  animation: leBlurOut 1s;
 }
 .modal-btn-close {
   padding: 0;
@@ -1005,16 +1007,3 @@ body {
   background-color: var(--ocean);
 }
 /**------------------------ANIMATION-------------------------- */
-.leFlyInTop span {
-  animation-name: leFlyInTop;
-}
-@keyframes leFlyInTop {
-  0% {
-    transform: translate(0px, -80px);
-    opacity: 0;
-  }
-  50% {
-    transform: translate(10px, 50px);
-    animation-timing-function: ease-in-out;
-  }
-}
